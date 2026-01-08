@@ -1,38 +1,31 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* background: #7ebfff; */
+  background-image: url('./Assets/paperBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Remove default Bootstrap navbar margins */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* margin-bottom: 0 !important;
+  border-bottom: none !important; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Remove any default margins from the first element after navbar */
+.App > * + * {
+  margin-top: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Ensure no spacing in the router */
+.App > div {
+  margin: 0 !important;
+  padding: 0 !important;
 }
