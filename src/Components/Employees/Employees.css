@@ -1,0 +1,47 @@
+.employeeContainer {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.employeeListing {
+    background: white;
+    border-radius: 1.5rem;
+    height: 600px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.employeeImage {
+    height: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.employeeImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: block;
+}
+
+.employeeInfo {
+    width: 66.67%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
